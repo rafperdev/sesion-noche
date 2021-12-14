@@ -8,6 +8,7 @@ import { Comentarios } from './componentes/Comentarios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login } from './componentes/Login';
 import { Home } from './componentes/Home';
+import { Ventas } from './componentes/Ventas';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/producto" element={<Productos />} />
-        <Route path="/ventas" element={<Productos />} />
+        <Route path="/ventas" element={<Ventas />} />
         <Route path="/home" element={<Home />} />
         <Route path="/producto/lista" element={<ProductList />} />
         <Route path="/comments" element={<Comentarios />} />
